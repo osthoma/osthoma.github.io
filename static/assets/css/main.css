@@ -1,0 +1,17 @@
+span.badge.pull-right {
+  float: right;
+}
+
+.fa {
+  width: 16px;
+}
+
+[data-toggle="collapse"] .fa:before {
+  content: "\f107  ";
+  margin-right: 5px;
+}
+
+[data-toggle="collapse"].collapsed .fa:before {
+  content: "\f105  ";
+  margin-right: 5px;
+}
