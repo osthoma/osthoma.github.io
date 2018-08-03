@@ -1,17 +1,27 @@
 function updateOneTimeTotal() {
-    $('.progress-onetime').css("width", "60%").text("60%");
+    let tasksTotal = $('.onetime').find('input').length;
+
+    let tasksCompleted = $('.onetime').find('input:checked').length;;
+
+    let percentageCompleted = Math.round(tasksCompleted/tasksTotal * 100);
+    $('.progress-onetime').css('width', `${percentageCompleted}%`).text(`${percentageCompleted}%`);
 }
 
 function updateDailyTotal() {
-    $('.progress-daily').css("width", "60%").text("60%");
+    let tasksTotal = $('.daily').find('input').length;
+
+    let tasksCompleted = $('.daily').find('input:checked').length;;
+
+    let percentageCompleted = Math.round(tasksCompleted/tasksTotal * 100);
+    $('.progress-daily').css('width', `${percentageCompleted}%`).text(`${percentageCompleted}%`);
 }
 
 function updateWeeklyTotal() {
-    let weeklyTasksTotal = $('.weekly').find('input').length;
+    let tasksTotal = $('.weekly').find('input').length;
 
-    let weeklyTasksCompleted = $('.weekly').find('input:checked').length;;
+    let tasksCompleted = $('.weekly').find('input:checked').length;;
 
-    let percentageCompleted = Math.round(weeklyTasksCompleted/weeklyTasksTotal * 100);
+    let percentageCompleted = Math.round(tasksCompleted/tasksTotal * 100);
     $('.progress-weekly').css('width', `${percentageCompleted}%`).text(`${percentageCompleted}%`);
 }
 
