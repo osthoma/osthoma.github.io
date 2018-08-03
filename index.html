@@ -7,10 +7,12 @@
   <title>BfA Checklist</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" media="screen" href="./static/assets/css/main.css" />
 
   <link rel="stylesheet" href="./static/assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" media="screen" href="./static/assets/css/main.css" />
+
 
   <script defer="defer" src="./static/libs/jquery/jquery-3.3.1.js"></script>
   <script defer="defer" src="./static/libs/bootstrap/bootstrap.min.js"></script>
@@ -41,10 +43,10 @@
             </li>
 
             <li class="list-group-item">
-              <span class="badge badge-warning pull-right">In Progress</span>
-              <span class="badge badge-success pull-right">Complete</span>
-              <label class="control-label" data-toggle="collapse" data-target="#collapseGeneral"><i class="fa" aria-hidden="true"></i>General</label>
-              <div id="collapseGeneral" class="collapse show">
+              <span class="badge badge-warning pull-right" id="generalProgress">In Progress</span>
+              <span class="badge badge-success pull-right" id="generalComplete">Complete</span>
+              <label class="control-label" data-toggle="collapse" data-target="#general"><i class="fa" aria-hidden="true"></i>General</label>
+              <div id="general" class="collapse show">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="general01">
                   <label class="custom-control-label" for="general01">Get a [Contract: Champions of Azeroth]</label>
@@ -57,10 +59,10 @@
             </li>
 
             <li class="list-group-item">
-              <span class="badge badge-warning pull-right">In Progress</span>
-              <span class="badge badge-success pull-right">Complete</span>
-              <label class="control-label" data-toggle="collapse" data-target="#collapseQuesting"><i class="fa" aria-hidden="true"></i>Questing</label>
-              <div id="collapseQuesting" class="collapse show">
+              <span class="badge badge-warning pull-right" id="questingProgress">In Progress</span>
+              <span class="badge badge-success pull-right" id="questingComplete">Complete</span>
+              <label class="control-label" data-toggle="collapse" data-target="#questing"><i class="fa" aria-hidden="true"></i>Questing</label>
+              <div id="questing" class="collapse show">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="questing01">
                   <label class="custom-control-label" for="questing01">Complete all quests in Vuldun</label>
@@ -77,10 +79,10 @@
             </li>
 
             <li class="list-group-item">
-              <span class="badge badge-warning pull-right">In Progress</span>
-              <span class="badge badge-success pull-right">Complete</span>
-              <label class="control-label" data-toggle="collapse" data-target="#collapseWarCampaign"><i class="fa" aria-hidden="true"></i>War Campaign</label>
-              <div id="collapseWarCampaign" class="collapse show">
+              <span class="badge badge-warning pull-right" id="warCampaignProgress">In Progress</span>
+              <span class="badge badge-success pull-right"id="warCampaignComplete">Complete</span>
+              <label class="control-label" data-toggle="collapse" data-target="#warCampaign"><i class="fa" aria-hidden="true"></i>War Campaign</label>
+              <div id="warCampaign" class="collapse show">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="warcampaign01">
                   <label class="custom-control-label" for="warcampaign01">Unlock First Foothold (lvl 112)</label>
@@ -126,7 +128,7 @@
         <div class="card border-dark">
 
           <div class="card-header">Daily
-            <span class="badge badge-danger pull-right">Reset</span>
+            <span class="badge badge-danger pull-right" onclick="resetDailyTasks()">Reset</span>
           </div>
 
           <ul class="list-group list-group-flush">
@@ -137,10 +139,10 @@
             </li>
 
             <li class="list-group-item">
-              <span class="badge badge-warning pull-right">In Progress</span>
-              <span class="badge badge-success pull-right">Complete</span>
-              <label class="control-label" data-toggle="collapse" data-target="#collapseWorldQuests"><i class="fa" aria-hidden="true"></i>World Quests</label>
-              <div id="collapseWorldQuests" class="collapse show">
+              <span class="badge badge-warning pull-right" id="worldQuestsProgress">In Progress</span>
+              <span class="badge badge-success pull-right" id="worldQuestsComplete">Complete</span>
+              <label class="control-label" data-toggle="collapse" data-target="#worldQuests"><i class="fa" aria-hidden="true"></i>World Quests</label>
+              <div id="worldQuests" class="collapse show">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="worldquests01">
                   <label class="custom-control-label" for="worldquests01">Complete all Champions of Azeroth World Quests</label>
@@ -149,10 +151,10 @@
             </li>
 
             <li class="list-group-item">
-              <span class="badge badge-warning pull-right">In Progress</span>
-              <span class="badge badge-success pull-right">Complete</span>
-              <label class="control-label" data-toggle="collapse" data-target="#collapseHeroics"><i class="fa" aria-hidden="true"></i>Heroics</label>
-              <div id="collapseHeroics" class="collapse show">
+              <span class="badge badge-warning pull-right" id="heroicsProgress">In Progress</span>
+              <span class="badge badge-success pull-right" id="heroicsComplete">Complete</span>
+              <label class="control-label" data-toggle="collapse" data-target="#heroics"><i class="fa" aria-hidden="true"></i>Heroics</label>
+              <div id="heroics" class="collapse show">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="heroic01">
                   <label class="custom-control-label" for="heroic01">Complete one Random Heroic Dungeon</label>
@@ -165,7 +167,7 @@
       <div class="col-12 col-md-4 weekly">
         <div class="card border-dark">
           <div class="card-header">Weekly
-            <span class="badge badge-danger pull-right">Reset</span>
+            <span class="badge badge-danger pull-right" onclick="resetWeeklyTasks()">Reset</span>
           </div>
 
           <ul class="list-group list-group-flush">
@@ -176,10 +178,10 @@
             </li>
 
             <li class="list-group-item">
-              <span class="badge badge-warning pull-right">In Progress</span>
-              <span class="badge badge-success pull-right">Complete</span>
-              <label class="control-label"  data-toggle="collapse" data-target="#collapseExpeditions"><i class="fa" aria-hidden="true"></i>Expeditions</label>
-              <div id="collapseExpeditions" class="collapse show">
+              <span class="badge badge-warning pull-right" id="expeditionsProgress">In Progress</span>
+              <span class="badge badge-success pull-right" id="expeditionsComplete">Complete</span>
+              <label class="control-label"  data-toggle="collapse" data-target="#expeditions"><i class="fa" aria-hidden="true"></i>Expeditions</label>
+              <div id="expeditions" class="collapse show">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="expeditions01">
                   <label class="custom-control-label" for="expeditions01">Complete weekly expedition quest</label>
@@ -188,10 +190,10 @@
             </li>
 
             <li class="list-group-item">
-              <span class="badge badge-warning pull-right">In Progress</span>
-              <span class="badge badge-success pull-right">Complete</span>
-              <label class="control-label" data-toggle="collapse" data-target="#collapseMythicDungeons"><i class="fa" aria-hidden="true"></i>Mythic Dungeons</label>
-              <div id="collapseMythicDungeons" class="collapse show">
+              <span class="badge badge-warning pull-right" id="mythicDungeonsProgress">In Progress</span>
+              <span class="badge badge-success pull-right" id="mythicDungeonsComplete">Complete</span>
+              <label class="control-label" data-toggle="collapse" data-target="#mythicDungeons"><i class="fa" aria-hidden="true"></i>Mythic Dungeons</label>
+              <div id="mythicDungeons" class="collapse show">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="dungeonm01">
                   <label class="custom-control-label" for="dungeonm01">Atal'Dazar</label>
@@ -239,6 +241,16 @@
       </div>
     </div>
   </div>
+  <div class="container">
+      <footer id="footer" style="margin: 5em 0;">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="text-center">Made from Medivh's amazing <a href="https://docs.google.com/spreadsheets/d/1xHvIxX5TE0ZMYTKBzkaRNFQTJzYQJhhho8KuyK4CB0w/htmlview?sle=true#">spreadsheet</a>.</br>
+              For bugs/requests contact <strong>fresh2k#2445</strong>.
+          </div>
+        </div>
+      </footer>
+    </div>
 </body>
 
 </html>

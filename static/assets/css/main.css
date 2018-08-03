@@ -6,6 +6,10 @@ span.badge.pull-right {
   width: 16px;
 }
 
+.badge-warning, .badge-success {
+  display: none;
+}
+
 [data-toggle="collapse"] .fa:before {
   content: "\f107  ";
   margin-right: 5px;
