@@ -49,11 +49,15 @@
               <div id="general" class="collapse show">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="general01">
-                  <label class="custom-control-label" for="general01">Get a [Contract: Champions of Azeroth]</label>
+                  <label class="custom-control-label" for="general01">Train new profession ranks</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="general02">
-                  <label class="custom-control-label" for="general02">Reach level 120</label>
+                  <label class="custom-control-label" for="general02">Get a [Contract: Champions of Azeroth]</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="general03">
+                  <label class="custom-control-label" for="general03">Reach level 120</label>
                 </div>
               </div>
             </li>
@@ -135,6 +139,30 @@
             <li class="list-group-item">
               <div class="progress" style="height: 16px;">
                 <div class="progress-bar bg-info progress-daily" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+              </div>
+            </li>
+
+            <li class="list-group-item">
+              <span class="badge badge-warning pull-right" id="missionTableProgress">In Progress</span>
+              <span class="badge badge-success pull-right" id="missionTableComplete">Complete</span>
+              <label class="control-label" data-toggle="collapse" data-target="#missionTable"><i class="fa" aria-hidden="true"></i>Mission Table</label>
+              <div id="missionTable" class="collapse show">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="missionTable01">
+                  <label class="custom-control-label" for="missionTable01">Start all AP or reputation missions</label>
+                </div>
+              </div>
+            </li>
+
+            <li class="list-group-item">
+              <span class="badge badge-warning pull-right" id="shipUpgradesProgress">In Progress</span>
+              <span class="badge badge-success pull-right" id="shipUpgradesComplete">Complete</span>
+              <label class="control-label" data-toggle="collapse" data-target="#shipUpgrades"><i class="fa" aria-hidden="true"></i>Ship Research</label>
+              <div id="shipUpgrades" class="collapse show">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="shipUpgrades01">
+                  <label class="custom-control-label" for="shipUpgrades01">Start research on a new upgrade</label>
+                </div>
               </div>
             </li>
 

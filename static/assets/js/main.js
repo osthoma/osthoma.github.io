@@ -39,6 +39,22 @@ function updateDailyTotal() {
     let percentageCompleted = Math.round(tasksCompleted / tasksTotal * 100);
     $('.progress-daily').css('width', `${percentageCompleted}%`).text(`${percentageCompleted}%`);
 
+    if($('#missionTable').find('input').length === $('#missionTable').find('input:checked').length) {
+        $('#missionTableProgress').css('display', 'none');
+        $('#missionTableComplete').css('display', 'inline-block');
+    } else {
+        $('#missionTableProgress').css('display', 'inline-block');
+        $('#missionTableComplete').css('display', 'none');
+    }
+
+    if($('#shipUpgrades').find('input').length === $('#shipUpgrades').find('input:checked').length) {
+        $('#shipUpgradesProgress').css('display', 'none');
+        $('#shipUpgradesComplete').css('display', 'inline-block');
+    } else {
+        $('#shipUpgradesProgress').css('display', 'inline-block');
+        $('#shipUpgradesComplete').css('display', 'none');
+    }
+
     if($('#worldQuests').find('input').length === $('#worldQuests').find('input:checked').length) {
         $('#worldQuestsProgress').css('display', 'none');
         $('#worldQuestsComplete').css('display', 'inline-block');
