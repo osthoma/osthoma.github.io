@@ -1,9 +1,17 @@
-span.badge.pull-right {
+.pull-right {
   float: right;
 }
 
 .fa {
   width: 16px;
+}
+
+.custom-control {
+  width: 100%
+}
+
+.custom-control-label {
+  width: 100%;
 }
 
 .badge-warning, .badge-success {

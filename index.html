@@ -9,13 +9,17 @@
 
 
   <link rel="stylesheet" href="./static/assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
 
   <link rel="stylesheet" type="text/css" media="screen" href="./static/assets/css/main.css" />
 
 
   <script defer="defer" src="./static/libs/jquery/jquery-3.3.1.js"></script>
   <script defer="defer" src="./static/libs/bootstrap/bootstrap.min.js"></script>
+
+  <script>var whTooltips = { colorLinks: true, iconizeLinks: true, renameLinks: true };</script>
+  <script src="//wow.zamimg.com/widgets/power.js"></script>
 
   <script defer="defer" src="./static/assets/js/main.js"></script>
 </head>
@@ -38,14 +42,16 @@
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <div class="progress" style="height: 16px;">
-                <div class="progress-bar bg-success progress-onetime" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                <div class="progress-bar bg-success progress-onetime" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+                  aria-valuemax="100">0%</div>
               </div>
             </li>
 
             <li class="list-group-item">
               <span class="badge badge-warning pull-right" id="generalProgress">In Progress</span>
               <span class="badge badge-success pull-right" id="generalComplete">Complete</span>
-              <label class="control-label" data-toggle="collapse" data-target="#general"><i class="fa" aria-hidden="true"></i>General</label>
+              <label class="control-label" data-toggle="collapse" data-target="#general">
+                <i class="fa" aria-hidden="true"></i>General</label>
               <div id="general" class="collapse show">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="general01">
@@ -65,7 +71,8 @@
             <li class="list-group-item">
               <span class="badge badge-warning pull-right" id="questingProgress">In Progress</span>
               <span class="badge badge-success pull-right" id="questingComplete">Complete</span>
-              <label class="control-label" data-toggle="collapse" data-target="#questing"><i class="fa" aria-hidden="true"></i>Questing</label>
+              <label class="control-label" data-toggle="collapse" data-target="#questing">
+                <i class="fa" aria-hidden="true"></i>Questing</label>
               <div id="questing" class="collapse show">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="questing01">
@@ -84,44 +91,99 @@
 
             <li class="list-group-item">
               <span class="badge badge-warning pull-right" id="warCampaignProgress">In Progress</span>
-              <span class="badge badge-success pull-right"id="warCampaignComplete">Complete</span>
-              <label class="control-label" data-toggle="collapse" data-target="#warCampaign"><i class="fa" aria-hidden="true"></i>War Campaign</label>
+              <span class="badge badge-success pull-right" id="warCampaignComplete">Complete</span>
+              <label class="control-label" data-toggle="collapse" data-target="#warCampaign">
+                <i class="fa" aria-hidden="true"></i>War Campaign</label>
               <div id="warCampaign" class="collapse show">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="warcampaign01">
-                  <label class="custom-control-label" for="warcampaign01">Unlock First Foothold (lvl 112)</label>
+                  <label class="custom-control-label" for="warcampaign01">Unlock First Foothold (lvl 112)
+                    <span class="pull-right">
+                      <a href="">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </span>
+                  </label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="warcampaign02">
-                  <label class="custom-control-label" for="warcampaign02">Unlock Second Foothold (lvl 114)</label>
+                  <label class="custom-control-label" for="warcampaign02">Unlock Second Foothold (lvl 114)
+                    <span class="pull-right">
+                      <a href="">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </span>
+                  </label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="warcampaign03">
-                  <label class="custom-control-label" for="warcampaign03">Unlock Expeditions (lvl 116)</label>
+                  <label class="custom-control-label" for="warcampaign03">Unlock Expeditions (lvl 116)
+                    <span class="pull-right">
+                      <a href="">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </span>
+                  </label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="warcampaign04">
-                  <label class="custom-control-label" for="warcampaign04">Unlock Third Foothold (lvl 118)</label>
+                  <label class="custom-control-label" for="warcampaign04">Unlock Third Foothold (lvl 118)
+                    <span class="pull-right">
+                      <a href="">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </span>
+                  </label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="warcampaign05">
-                  <label class="custom-control-label" for="warcampaign05">Complete "The First Assault" (lvl 120)</label>
+                  <label class="custom-control-label" for="warcampaign05">Complete "The First Assault" (lvl 120)
+                    <span class="pull-right">
+                      <a href="">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </span>
+                  </label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="warcampaign06">
-                  <label class="custom-control-label" for="warcampaign06">Complete "The Marshal's Grave" (CoA 4.5k/6k)</label>
+                  <label class="custom-control-label" for="warcampaign06">Complete "The Marshal's Grave" (CoA 4.5k/6k)
+                    <span class="pull-right">
+                      <a href="">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </span>
+                  </label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="warcampaign07">
-                  <label class="custom-control-label" for="warcampaign07">Complete "Death of a Tidesage" (CoA 3k/12k)</label>
+                  <label class="custom-control-label" for="warcampaign07">Complete "Death of a Tidesage" (CoA 3k/12k)
+                    <span class="pull-right">
+                      <a href="">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </span>
+                  </label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="warcampaign08">
-                  <label class="custom-control-label" for="warcampaign08">Complete "At the Bottom of the Sea" (CoA 7.5k/12k)</label>
+                  <label class="custom-control-label" for="warcampaign08">Complete "At the Bottom of the Sea" (CoA 7.5k/12k)
+                    <span class="pull-right">
+                      <a href="">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </span>
+                  </label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="warcampaign09">
-                  <label class="custom-control-label" for="warcampaign09">Complete "The Strike on Boralus" (CoA 12k/12k)</label>
+                  <label class="custom-control-label" for="warcampaign09">Complete "The Strike on Boralus" (CoA 12k/12k)
+                    <span class="pull-right">
+                      <a href="">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </span>
+                  </label>
                 </div>
               </div>
             </li>
@@ -138,14 +200,16 @@
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <div class="progress" style="height: 16px;">
-                <div class="progress-bar bg-info progress-daily" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                <div class="progress-bar bg-info progress-daily" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+                  aria-valuemax="100">0%</div>
               </div>
             </li>
 
             <li class="list-group-item">
               <span class="badge badge-warning pull-right" id="missionTableProgress">In Progress</span>
               <span class="badge badge-success pull-right" id="missionTableComplete">Complete</span>
-              <label class="control-label" data-toggle="collapse" data-target="#missionTable"><i class="fa" aria-hidden="true"></i>Mission Table</label>
+              <label class="control-label" data-toggle="collapse" data-target="#missionTable">
+                <i class="fa" aria-hidden="true"></i>Mission Table</label>
               <div id="missionTable" class="collapse show">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="missionTable01">
@@ -157,7 +221,8 @@
             <li class="list-group-item">
               <span class="badge badge-warning pull-right" id="shipUpgradesProgress">In Progress</span>
               <span class="badge badge-success pull-right" id="shipUpgradesComplete">Complete</span>
-              <label class="control-label" data-toggle="collapse" data-target="#shipUpgrades"><i class="fa" aria-hidden="true"></i>Ship Research</label>
+              <label class="control-label" data-toggle="collapse" data-target="#shipUpgrades">
+                <i class="fa" aria-hidden="true"></i>Ship Research</label>
               <div id="shipUpgrades" class="collapse show">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="shipUpgrades01">
@@ -169,7 +234,8 @@
             <li class="list-group-item">
               <span class="badge badge-warning pull-right" id="worldQuestsProgress">In Progress</span>
               <span class="badge badge-success pull-right" id="worldQuestsComplete">Complete</span>
-              <label class="control-label" data-toggle="collapse" data-target="#worldQuests"><i class="fa" aria-hidden="true"></i>World Quests</label>
+              <label class="control-label" data-toggle="collapse" data-target="#worldQuests">
+                <i class="fa" aria-hidden="true"></i>World Quests</label>
               <div id="worldQuests" class="collapse show">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="worldquests01">
@@ -181,7 +247,8 @@
             <li class="list-group-item">
               <span class="badge badge-warning pull-right" id="heroicsProgress">In Progress</span>
               <span class="badge badge-success pull-right" id="heroicsComplete">Complete</span>
-              <label class="control-label" data-toggle="collapse" data-target="#heroics"><i class="fa" aria-hidden="true"></i>Heroics</label>
+              <label class="control-label" data-toggle="collapse" data-target="#heroics">
+                <i class="fa" aria-hidden="true"></i>Heroics</label>
               <div id="heroics" class="collapse show">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="heroic01">
@@ -201,14 +268,16 @@
           <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <div class="progress" style="height: 16px;">
-                <div class="progress-bar bg-warning  progress-weekly" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                <div class="progress-bar bg-warning  progress-weekly" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0"
+                  aria-valuemax="100">0%</div>
               </div>
             </li>
 
             <li class="list-group-item">
               <span class="badge badge-warning pull-right" id="expeditionsProgress">In Progress</span>
               <span class="badge badge-success pull-right" id="expeditionsComplete">Complete</span>
-              <label class="control-label"  data-toggle="collapse" data-target="#expeditions"><i class="fa" aria-hidden="true"></i>Expeditions</label>
+              <label class="control-label" data-toggle="collapse" data-target="#expeditions">
+                <i class="fa" aria-hidden="true"></i>Expeditions</label>
               <div id="expeditions" class="collapse show">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="expeditions01">
@@ -220,47 +289,138 @@
             <li class="list-group-item">
               <span class="badge badge-warning pull-right" id="mythicDungeonsProgress">In Progress</span>
               <span class="badge badge-success pull-right" id="mythicDungeonsComplete">Complete</span>
-              <label class="control-label" data-toggle="collapse" data-target="#mythicDungeons"><i class="fa" aria-hidden="true"></i>Mythic Dungeons</label>
+              <label class="control-label" data-toggle="collapse" data-target="#mythicDungeons">
+                <i class="fa" aria-hidden="true"></i>Mythic Dungeons</label>
               <div id="mythicDungeons" class="collapse show">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="dungeonm01">
-                  <label class="custom-control-label" for="dungeonm01">Atal'Dazar</label>
+                  <label class="custom-control-label" for="dungeonm01">Atal'Dazar
+                    <span class="pull-right">
+                      <a href="">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                      <a href="">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </span>
+                  </label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="dungeonm02">
-                  <label class="custom-control-label" for="dungeonm02">King's Rest</label>
+                  <label class="custom-control-label" for="dungeonm02">King's Rest
+                    <span class="pull-right">
+                      <a href="">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                      <a href="">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </span>
+                  </label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="dungeonm03">
-                  <label class="custom-control-label" for="dungeonm03">Waycrest Manor</label>
+                  <label class="custom-control-label" for="dungeonm03">Waycrest Manor
+                    <span class="pull-right">
+                      <a href="">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                      <a href="">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </span>
+                  </label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="dungeonm04">
-                  <label class="custom-control-label" for="dungeonm04">Shrine of the Storm</label>
+                  <label class="custom-control-label" for="dungeonm04">Shrine of the Storm
+                    <span class="pull-right">
+                      <a href="">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                      <a href="">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </span>
+                  </label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="dungeonm05">
-                  <label class="custom-control-label" for="dungeonm05">Siege of Boralus</label>
+                  <label class="custom-control-label" for="dungeonm05">Siege of Boralus
+                    <span class="pull-right">
+                      <a href="">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                      <a href="">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </span>
+                  </label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="dungeonm06">
-                  <label class="custom-control-label" for="dungeonm06">Underrot</label>
+                  <label class="custom-control-label" for="dungeonm06">Underrot
+                    <span class="pull-right">
+                      <a href="">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                      <a href="">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </span>
+                  </label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="dungeonm07">
-                  <label class="custom-control-label" for="dungeonm07">Motherlode</label>
+                  <label class="custom-control-label" for="dungeonm07">Motherlode
+                    <span class="pull-right">
+                      <a href="">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                      <a href="">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </span>
+                  </label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="dungeonm08">
-                  <label class="custom-control-label" for="dungeonm08">Tol Dagor</label>
+                  <label class="custom-control-label" for="dungeonm08">Tol Dagor
+                    <span class="pull-right">
+                      <a href="">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                      <a href="">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </span>
+                  </label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="dungeonm09">
-                  <label class="custom-control-label" for="dungeonm09">Freehold</label>
+                  <label class="custom-control-label" for="dungeonm09">Freehold
+                    <span class="pull-right">
+                      <a href="">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                      <a href="">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </span>
+                  </label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="dungeonm010">
-                  <label class="custom-control-label" for="dungeonm010">Temple of Sethraliss</label>
+                  <label class="custom-control-label" for="dungeonm010">Temple of Sethraliss
+                    <span class="pull-right">
+                      <a href="">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                      <a href="">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </span>
+                  </label>
                 </div>
               </div>
             </li>
@@ -268,17 +428,59 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="container">
-      <footer id="footer" style="margin: 5em 0;">
-        <div class="row">
-          <div class="col-lg-12">
-            <p class="text-center">Made from Medivh's amazing <a href="https://docs.google.com/spreadsheets/d/1xHvIxX5TE0ZMYTKBzkaRNFQTJzYQJhhho8KuyK4CB0w/htmlview?sle=true#" target="_blank">spreadsheet</a>.</br>
-              For bugs/requests contact <strong>fresh2k#9240</strong>(Discord).
+    <div class="row">
+      <div class="col-12">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#week1">Week 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#week2">Week 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#week3">Week 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#week4">Week 4</a>
+          </li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+          <div class="tab-pane fade show active" id="week1">
+            <p>Goals</p>
+            <p>Goal 1</p>
+            <p>Goal 2</p>
+          </div>
+          <div class="tab-pane fade" id="week2">
+            <p>Goals</p>
+            <p>Goal 1</p>
+            <p>Goal 2</p>
+          </div>
+          <div class="tab-pane fade" id="week3">
+            <p>Goals</p>
+            <p>Goal 1</p>
+            <p>Goal 2</p>
+          </div>
+          <div class="tab-pane fade" id="week4">
+            <p>Goals</p>
+            <p>Goal 1</p>
+            <p>Goal 2</p>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
+  </div>
+  <div class="container">
+    <footer id="footer" style="margin: 5em 0;">
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="text-center">Made from Medivh's amazing
+            <a href="https://docs.google.com/spreadsheets/d/1xHvIxX5TE0ZMYTKBzkaRNFQTJzYQJhhho8KuyK4CB0w/htmlview?sle=true#" target="_blank">spreadsheet</a>.</br>
+            For bugs/requests contact
+            <strong>fresh2k#9240</strong>(Discord).
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
